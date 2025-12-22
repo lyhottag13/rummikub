@@ -1,0 +1,17 @@
+<head>
+
+</head>
+
+<body>
+    <span id="timer"></span>
+    <button id="button" onclick="resetTimer()">CLICK</button>
+    <script>
+        let count = 60;
+        setInterval(() => {
+            document.getElementById('timer').textContent = count--;
+        }, 1000);
+        function resetTimer() {
+            count = 60;
+        }
+    </script>
+</body>
