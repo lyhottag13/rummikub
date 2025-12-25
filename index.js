@@ -3,7 +3,7 @@ const input = document.getElementById('input');
 
 function main() {
     document.addEventListener('mousedown', e => {
-        if (e.target === document.getElementById('app')) {
+        if (e.target !== document.getElementById('input')) {
             resetTimer();
         }
     });
